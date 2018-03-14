@@ -1,12 +1,16 @@
 angular.module("dndToolKit").service("CharacterService", ["$http", function($http) {
 	this.character = {
 		name: "",
-		class: "",
-		race: "",
-		stats: "",
+		class: {},
+		race: {},
+		stats: {},
 	};
 
-	this.selectedRace = {};
+	this.setName = (charName) => {
+		console.log(charName);
+		this.character.name = charName;
+		console.log(this.character.name);
+	}
 
 	this.getClassList = function() {
 		return $http.get("http://www.dnd5eapi.co/api/classes").then(
@@ -26,16 +30,11 @@ angular.module("dndToolKit").service("CharacterService", ["$http", function($htt
 		)
 	}
 
-	this.getRace = function(raceURL) {
-		$http.get(raceURL).then(function(playerRace){
-			this.selectedRace = playerRace.data;
+	this.setRace = function(raceURL) {
+		$http.get(raceURL).then( (playerRace) => {
+			this.character.race = playerRace.data;
 			console.log(this.selectedRace);
 		})
-	}
-
-	this.setRace = function() {
-		this.character.race = this.selectedRace;
-		console.log(this.character);
 	}
 
 }]);

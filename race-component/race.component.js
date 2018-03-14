@@ -7,7 +7,7 @@ angular.module("dndToolKit").component("raceComponent", {
 
   controller: ["CharacterService", function(CharacterService) {
     this.raceList = {};
-    this.race = {}
+    this.race = {};
 
     this.getRaceList = function() {
       CharacterService.getRaceList().then(
@@ -16,8 +16,7 @@ angular.module("dndToolKit").component("raceComponent", {
 
     this.setCharacterRace = function(raceURL) {
       console.log(raceURL);
-      CharacterService.getRace(raceURL);
-      CharacterService.setRace();
+      CharacterService.setRace(raceURL);
     }
 
     this.getCharacterInfo = function() {
