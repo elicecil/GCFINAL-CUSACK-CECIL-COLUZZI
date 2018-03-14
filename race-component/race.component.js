@@ -13,5 +13,10 @@ angular.module("dndToolKit").component("raceComponent", {
         raceList => this.raceList = raceList.results);
 
       }
+
+    this.printUrl = function(deets) {
+      console.log(deets)
+    }
+
     }]
 });
