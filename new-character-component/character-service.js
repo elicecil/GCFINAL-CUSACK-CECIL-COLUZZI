@@ -38,4 +38,9 @@ angular.module("dndToolKit").service("CharacterService", ["$http", function($htt
 		})
 	}
 
+	this.fetchCharacter = () => {
+		console.log(this.character);
+		return this.character
+	}
+
 }]);
