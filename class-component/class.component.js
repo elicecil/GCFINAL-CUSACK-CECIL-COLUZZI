@@ -1,11 +1,11 @@
 angular.module("dndToolKit").component("classComponent", {
-  templateUrl: "class-component/class.component.html",
+  templateUrl: "class-component/class-component.html",
   bindings: {
     class: '<'
 
   },
 
-  controller: ["CharacterService", function(CharacterService) {
+  controller: ["CharacterService", "$location", function(CharacterService, $location) {
     this.classList = {};
     this.class = {}
 
@@ -17,7 +17,7 @@ angular.module("dndToolKit").component("classComponent", {
     this.setCharacterClass = function(classURL) {
       console.log(classURL);
       CharacterService.getClass(classURL);
-      CharacterService.setClass();
+      $location.url("/summary")
     }
 
     this.getCharacterInfo = function() {

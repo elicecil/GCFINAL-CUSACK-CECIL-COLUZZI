@@ -25,9 +25,10 @@ angular.module("dndToolKit").service("CharacterService", ["$http", function($htt
 	}
 
 	this.getClass = function(classURL) {
-		return $http.get(classURL).then(
-			response => response.data
-		)
+		$http.get(classURL).then( (playerClass) => {
+			this.character.class = playerClass.data;
+			console.log(this.character);
+		})
 	}
 
 	this.setRace = function(raceURL) {
