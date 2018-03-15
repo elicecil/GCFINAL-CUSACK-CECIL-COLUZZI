@@ -1,4 +1,4 @@
-angular.module("dndToolKit").service("CharacterService", ["$http", function($http) {
+angular.module("dndToolKit").service("CharacterService", ["$http", "$location", function($http, $location) {
 	this.character = {
 		name: "",
 		class: {},
@@ -15,6 +15,7 @@ angular.module("dndToolKit").service("CharacterService", ["$http", function($htt
 	this.getClassList = function() {
 		return $http.get("http://www.dnd5eapi.co/api/classes").then(
 			response => response.data
+			
 		)
 	}
 

@@ -9,5 +9,8 @@ angular.module("dndToolKit").component("newCharacterComponent", {
       $location.url("/race");
 
     }
+    this.print = function() {
+    	location = CharacterService.print();
+	}
   }]
 });
