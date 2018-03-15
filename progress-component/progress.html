@@ -1,1 +1,2 @@
-<div ng-class="{selected: currentStep === ctrl.maxStep[{{$index}}]}" ng-repeat="step in ctrl.maxSteps()" class="step" step="step"></div>
+<div ng-class="{selected: step === $ctrl.step}" ng-repeat="step in $ctrl.allSteps" step="step" class="steps">hello</div>
+
