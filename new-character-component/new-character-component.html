@@ -1,5 +1,12 @@
 <div class="new-character-container">
-  <input class="name-input" type="text" name="" value="" ng-model="$ctrl.name" placeholder="Character Name">
-  <button class="start-button" type="button" name="button" ng-click="$ctrl.setName($ctrl.name)">Start</button>
-  <progress-steps step="0" steps="3"></progress-steps>
+  <div class="quote-container">
+    <h1 class="quote">This is some text that we have</h1>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+  </div>
+  <div class="character-input-container">
+    <input class="name-input" type="text" name="" value="" ng-model="$ctrl.name" placeholder="Enter Character Name">
+    <button class="start-button" type="button" name="button" ng-click="$ctrl.setName($ctrl.name)">Start!</button>
+  </div>
 </div>
+
+<progress-steps step="0" steps="3"></progress-steps>

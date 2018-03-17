@@ -1,4 +1,76 @@
+new-character-component .new-character-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("AdobeStock_169913902_cropped.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+@media (max-width: 425px) {
+  new-character-component .new-character-container {
+    flex-direction: column;
+  }
+}
+
+new-character-component .character-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  height: 25%;
+  width: 400px;
+}
+
+@media (max-width: 425px) {
+  new-character-component .character-input-container {
+    width: 60%;
+  }
+}
 new-character-component .name-input {
-  width: 250px;
-  height: 75px;
+  width: 100%;
+  border: none;
+  font-size: 22px;
+  padding: 20px;
+}
+
+new-character-component .quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 40px;
+}
+@media (max-width: 425px) {
+  new-character-component .quote-container {
+    width: 70%;
+    font-size: 16px;
+  }
+}
+new-character-component .start-button {
+  display: block;
+  margin-top: 20px;
+  background-color: #A91E22;
+  color: #FFF;
+  font-size: 22px;
+  font-weight: bold;
+  border: none;
+  padding: 20px 0px;
+}
+
+new-character-component .start-button:hover {
+  background-color: #d0373b;
+  box-shadow:
+}
+
+new-character-component .quote {
+  color: #FFF;
 }
