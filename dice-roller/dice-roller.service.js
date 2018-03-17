@@ -22,15 +22,12 @@ angular.module("dndToolKit").service("DiceService", function() {
             var dice = this.rollDice();
             dice = this.findLowest(dice);
             var sum = this.rollDice().reduce((total, amount) => total + amount);
-            console.log(dice)
             if(sum >= 8) {
                 this.rolls.push(sum)
-                console.log(this.rolls);
             } else {
                 sum = 8;
                 this.rolls.push(sum)
-                console.log(this.rolls);
-            }
-        }
+            } 
+        } return this.rolls;
     }
 });
