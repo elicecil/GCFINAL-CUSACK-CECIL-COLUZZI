@@ -11,12 +11,15 @@ angular.module("dndToolKit").component("classComponent", {
 
     this.getClassList = function() {
       CharacterService.getClassList().then(
-        classList => this.classList = classList.results);
+        classList => {
+          this.classList = classList
+          console.log(classList)
+        });
       }
 
-    this.setCharacterClass = function(classURL) {
-      console.log(classURL);
-      CharacterService.getClass(classURL);
+    this.setCharacterClass = function(klass) {
+      console.log(klass);
+      CharacterService.setClass(klass);
       $location.url("/summary")
     }
 

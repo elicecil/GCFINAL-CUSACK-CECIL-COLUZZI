@@ -8,20 +8,19 @@ angular.module("dndToolKit").component("raceComponent", {
   controller: ["CharacterService", "$location", function(CharacterService, $location) {
     this.raceList = {};
     this.race = {};
+    this.allRaces = {};
 
     this.getRaceList = function() {
       CharacterService.getRaceList().then(
-        raceList => this.raceList = raceList.results);
+        raceList => this.raceList = raceList);
       }
 
-    this.setCharacterRace = function(raceURL) {
-      console.log(raceURL);
-      CharacterService.setRace(raceURL);
+
+    this.setCharacterRace = function(race) {
+      console.log(race);
+      CharacterService.setRace(race);
       $location.url("/class")
     }
 
-    this.getCharacterInfo = function() {
-      console.log(CharacterService.character);
-    }
     }]
 });

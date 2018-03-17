@@ -1,4 +1,4 @@
 <button ng-click="$ctrl.getClassList()">Get all Classes</button>
 <button ng-click="$ctrl.getCharacterInfo()">Whats my Class?</button>
-<button ng-click="$ctrl.setCharacterClass(class.url)" ng-repeat="class in $ctrl.classList">{{class.name}}</button>
-<progress-steps step="0" steps="4"></progress-steps>
+<button ng-click="$ctrl.setCharacterClass(class)" ng-repeat="class in $ctrl.classList">{{class.name}} <br> {{class.proficiencies}}</button>
+<progress-steps step="2" steps="3"></progress-steps>
