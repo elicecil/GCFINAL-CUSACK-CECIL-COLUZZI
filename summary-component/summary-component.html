@@ -1,8 +1,15 @@
-<div class="">
-  <h1 ng-model="$ctrl.character.name">{{$ctrl.character.name}}</h1>
-  <h3>{{$ctrl.character.race.name}} {{$ctrl.character.class.name}}</h3>
-  <p>{{$ctrl.character.race.age}}</p>
-  <p>{{$ctrl.character.race.alignment}}</p>
-  <p>{{$ctrl.character.race.language_desc}}</p>
+<div class="summary-main">
+  <div class="summary-info">
+    <div class="character-header">
+      <h1 ng-model="$ctrl.character.name">{{$ctrl.character.name}}</h1>
+    </div>
+    <div class="race-class">
+      <p class="summary-race">{{$ctrl.character.race.name}}</p> 
+      <p class="summary-class">{{$ctrl.character.class.name}}</p>
+    </div>
+    <p>{{$ctrl.character.race.age}}</p>
+    <p>{{$ctrl.character.race.alignment}}</p>
+    <p>{{$ctrl.character.race.language_desc}}</p>
+  </div>
+  <progress-steps step="3" steps="3"></progress-steps>
 </div>
-<progress-steps step="3" steps="3"></progress-steps>
