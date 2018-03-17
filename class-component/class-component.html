@@ -1,4 +1,13 @@
-<button ng-click="$ctrl.getClassList()">Get all Classes</button>
-<button ng-click="$ctrl.getCharacterInfo()">Whats my Class?</button>
-<button ng-click="$ctrl.setCharacterClass(class)" ng-repeat="class in $ctrl.classList">{{class.name}} <br> {{class.proficiencies}}</button>
-<progress-steps step="2" steps="3"></progress-steps>
+<div class="class-component">
+	<div class="class-component-header">Choose Your Class</div>
+	<div class="class-component-button-box" ng-click="$ctrl.setCharacterClass(class)" ng-repeat="class in $ctrl.classList">
+		<div class="class-component-name-box">{{class.name}}</div>
+		<div class="class-component-info-box">
+			<div class="class-component-hit-die"><b>Hit Die: </b><br>{{class.hit_die}}</div>
+			<div class="class-component-proficiencies"><b>Proficenties:</b>
+				<div class="class-component-proficiency" ng-repeat="proficiency in class.proficiencies">{{proficiency.name}}</div>
+			</div>
+		</div>
+	</div>
+	<progress-steps step="2" steps="3"></progress-steps>
+</div>

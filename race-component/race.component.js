@@ -27,7 +27,7 @@ angular.module("dndToolKit").component("raceComponent", {
       }
     }
 
-    this.getRaceList = function() {
+    this.$onInit = function() {
       CharacterService.getRaceList().then(
         raceList => this.raceList = raceList);
     }

@@ -1,0 +1,75 @@
+body {
+	background-color: #fff;
+}
+
+.race-component {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.race-component-header {
+	text-align: center;
+	height: 35px;
+	padding: 10px;
+	background-color: #a91e22;
+	color: #fff;
+	font-size: 31px;
+	font-weight: 600;
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+.race-component-button-box {
+	width: 75%;
+	display: flex;
+	background-color: #d9d8d8;
+	color: #383838;
+	flex-direction: column;
+	margin-bottom: 25px;
+	box-shadow: 3px 3px 3px;
+
+}
+
+.race-component-button-box:hover {
+	cursor: pointer;
+	box-shadow: 7px 7px 7px;
+}
+
+.race-component-name-box {
+	width: auto;
+	height: 30px;
+	background-color: #a91e22;
+	color: #fff;
+	font-size: 20px;
+	padding-left: 25px;
+	padding-top: 5px;  
+}
+
+.race-component-info-box {
+	margin: 15px;
+	display: flex;
+}
+
+.race-component-description {
+	width: 50%;
+	margin-right: 15px;
+	padding: 10px;
+}
+
+.race-component-bonus-list {
+	margin-right: 15px;
+	padding: 10px;
+}
+
+.race-component-speed-age {
+	padding: 10px;
+}
+
+.race-component-speed {
+	margin-top: 15px;
+
+}
+

@@ -1,7 +1,20 @@
-.steps {
-	color: red;
+.progress-footer {
+	display: flex;
+
 }
 
+.steps {
+	width: 30px;
+	height: 30px;
+	background-color: #a91e22;
+	margin: 10px;
+	border-radius: 2em;
+}
+
+
+
 .selected {
-	color: yellow;
+	width: 35px;
+	height: 35px;
+	box-shadow: 2px 2px 2px;
 }

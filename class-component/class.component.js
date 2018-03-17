@@ -9,7 +9,7 @@ angular.module("dndToolKit").component("classComponent", {
     this.classList = {};
     this.class = {}
 
-    this.getClassList = function() {
+    this.$onInit = function() {
       CharacterService.getClassList().then(
         classList => {
           this.classList = classList

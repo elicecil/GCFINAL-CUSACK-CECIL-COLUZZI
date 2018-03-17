@@ -1,0 +1,74 @@
+body {
+	background-color: #fff;
+}
+
+.class-component {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.class-component-header {
+	text-align: center;
+	height: 35px;
+	padding: 10px;
+	background-color: #a91e22;
+	color: #fff;
+	font-size: 31px;
+	font-weight: 600;
+	margin-bottom: 60px;
+	width: 100%;
+}
+
+.class-component-button-box {
+	width: 75%;
+	display: flex;
+	background-color: #d9d8d8;
+	color: #383838;
+	flex-direction: column;
+	margin-bottom: 25px;
+	box-shadow: 3px 3px 3px;
+
+}
+
+.class-component-button-box:hover {
+	cursor: pointer;
+	box-shadow: 7px 7px 7px;
+}
+
+.class-component-name-box {
+	width: auto;
+	height: 30px;
+	background-color: #a91e22;
+	color: #fff;
+	font-size: 20px;
+	padding-left: 25px;
+	padding-top: 5px;  
+}
+
+.class-component-info-box {
+	margin: 15px;
+	display: flex;
+}
+
+.class-component-hit-die {
+	padding: 10px;
+	margin-right: 15px;
+}
+
+.class-component-proficiencies {
+	padding: 10px;
+}
+
+.class-component-proficiency {
+	padding: 5px;
+}
+
+
+
+
+
+
+
