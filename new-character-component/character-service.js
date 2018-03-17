@@ -1,9 +1,10 @@
-angular.module("dndToolKit").service("CharacterService", ["$http", function($http) {
+angular.module("dndToolKit").service("CharacterService", ["$http", "$location", "$q", function($http, $location, $q) {
 	this.character = {
 		name: "",
 		class: {},
 		race: {},
 		stats: {},
+		startingEquiment: {}
 	};
 
 	this.setName = (charName) => {
@@ -14,28 +15,57 @@ angular.module("dndToolKit").service("CharacterService", ["$http", function($htt
 
 	this.getClassList = function() {
 		return $http.get("http://www.dnd5eapi.co/api/classes").then(
-			response => response.data
-		)
+			response => { 
+				return $q.all(response.data.results.map( klass => {
+					console.log(klass)
+					return this.getClass(klass.url)
+				}));
+			})
 	}
 
 	this.getRaceList = function() {
 		return $http.get("http://www.dnd5eapi.co/api/races").then(
+			response => {
+				return $q.all(response.data.results.map( race => {
+					console.log(race)
+					return this.getRace(race.url)
+				}));
+			})
+	}
+
+	this.getStartingEquipment = function() {
+		return $http.get("http://www.dnd5eapi.co/api/startingequipment").then(
 			response => response.data
-		)
+			)
 	}
 
 	this.getClass = function(classURL) {
-		$http.get(classURL).then( (playerClass) => {
-			this.character.class = playerClass.data;
-			console.log(this.character);
+		return $http.get(classURL).then( playerClass => {
+			console.log(playerClass.data)
+			return playerClass.data;
 		})
 	}
 
-	this.setRace = function(raceURL) {
-		$http.get(raceURL).then( (playerRace) => {
-			this.character.race = playerRace.data;
-			console.log(this.selectedRace);
+	this.getRace = function(raceURL) {
+		return $http.get(raceURL).then( playerRace => {
+			console.log(playerRace.data)
+			return playerRace.data;
 		})
+	}
+
+	this.setRace = function(race) {
+		this.character.race = race	
+	}
+
+	this.setClass = function(klass) {
+		this.character.class = klass
+	}
+	
+
+
+	this.fetchCharacter = () => {
+		console.log(this.character);
+		return this.character
 	}
 
 }]);
