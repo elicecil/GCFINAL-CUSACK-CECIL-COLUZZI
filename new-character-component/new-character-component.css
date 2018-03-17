@@ -13,7 +13,7 @@ new-character-component .new-character-container {
   width: 100%;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   new-character-component .new-character-container {
     flex-direction: column;
   }
@@ -28,7 +28,7 @@ new-character-component .character-input-container {
   width: 400px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   new-character-component .character-input-container {
     width: 60%;
   }
@@ -44,12 +44,12 @@ new-character-component .quote-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 600px;
+  width: 550px;
   color: #FFF;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 20px 40px;
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
   new-character-component .quote-container {
     width: 70%;
     font-size: 16px;
@@ -64,6 +64,13 @@ new-character-component .start-button {
   font-weight: bold;
   border: none;
   padding: 20px 0px;
+}
+
+@media (max-width: 768px) {
+  new-character-component .quote-container {
+    width: 70%;
+    font-size: 16px;
+  }
 }
 
 new-character-component .start-button:hover {

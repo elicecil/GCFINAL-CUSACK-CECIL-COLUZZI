@@ -3,20 +3,23 @@
 	<div class="race-component-button-box" ng-click="$ctrl.setCharacterRace(race)" ng-repeat="race in $ctrl.raceList">
 		<div class="race-component-name-box">{{race.name}}</div>
 		<div class="race-component-info-box">
-			<div class="race-component-description"><b>Description:</b><br>{{race.alignment}}</div>
+			<div class="race-component-description"><b>Description:</b><p>{{race.alignment}}</p></div>
 			<div class="race-component-bonus-list">
 				<b>Bonuses:</b>
-				<div>Strength: +{{race.ability_bonuses[0]}}, </div>
-				<div>Dexterity: +{{race.ability_bonuses[1]}}, </div>
-				<div>Constitution: +{{race.ability_bonuses[2]}}, </div>
-				<div>Intelligence: +{{race.ability_bonuses[3]}}, </div>
-				<div>Wisdom: +{{race.ability_bonuses[4]}}, </div>
-				<div>Charisma +{{race.ability_bonuses[5]}}</div>
+				<p>
+					<div>Strength: +{{race.ability_bonuses[0]}}, </div>
+					<div>Dexterity: +{{race.ability_bonuses[1]}}, </div>
+					<div>Constitution: +{{race.ability_bonuses[2]}}, </div>
+					<div>Intelligence: +{{race.ability_bonuses[3]}}, </div>
+					<div>Wisdom: +{{race.ability_bonuses[4]}}, </div>
+					<div>Charisma +{{race.ability_bonuses[5]}}</div>
+				</p>
 			</div>
-			<div class="race-component-speed-age"> <div><b>Speed:</b> {{race.speed}} </div>
-			<div class="race-component-speed"> <b>Size:</b> {{race.size}} </div>
+			<div class="speed-size-container">
+				<div class="race-component-speed-age"><b>Speed:</b> {{race.speed}} </div>
+				<div class="race-component-speed"> <b>Size:</b> {{race.size}} </div>
 			</div>
 		</div>
 	</div>
-	<progress-steps step="1" steps="3"></progress-steps>
-</div> 
+</div>
+<progress-steps step="1" steps="3"></progress-steps>

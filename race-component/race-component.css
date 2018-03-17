@@ -5,9 +5,11 @@ body {
 .race-component {
 	background-color: #fff;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: stretch;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .race-component-header {
@@ -23,53 +25,61 @@ body {
 }
 
 .race-component-button-box {
-	width: 75%;
+	min-width: 350px;
+	flex: 1;
 	display: flex;
-	background-color: #d9d8d8;
+	background-color: #F5F5F5;
 	color: #383838;
 	flex-direction: column;
-	margin-bottom: 25px;
-	box-shadow: 3px 3px 3px;
-
+	margin: 20px;
+	box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
+  transition: box-shadow 150ms;
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .race-component-button-box:hover {
-	cursor: pointer;
-	box-shadow: 7px 7px 7px;
+	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+}
+
+.race-component-button-box:hover .race-component-name-box  {
+	background-color: #c9191e;
 }
 
 .race-component-name-box {
 	width: auto;
-	height: 30px;
 	background-color: #a91e22;
 	color: #fff;
 	font-size: 20px;
-	padding-left: 25px;
-	padding-top: 5px;  
+	padding: 20px 40px;
 }
 
 .race-component-info-box {
-	margin: 15px;
+	margin: 30px 40px;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .race-component-description {
-	width: 50%;
-	margin-right: 15px;
-	padding: 10px;
+	flex: 2;
+	min-width: 350px;
+	margin-right: 60px;
 }
 
 .race-component-bonus-list {
-	margin-right: 15px;
-	padding: 10px;
+
+	margin-right: 60px;
 }
 
 .race-component-speed-age {
-	padding: 10px;
 }
 
 .race-component-speed {
-	margin-top: 15px;
+	margin-top: 20px;
 
 }
 
+.speed-size-container {
+
+}
