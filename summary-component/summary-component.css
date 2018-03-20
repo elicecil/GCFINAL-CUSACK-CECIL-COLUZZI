@@ -1,14 +1,26 @@
-.summary-main {
-    background-color: #A5A4A4;
-}
+body { 
+    background-color: #FFFFFF;
 
+}
+.header {
+    background-color: #A91E22;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.summary-main p {
+    margin-left: 15px;
+}
 .summary-info {
-    border-radius: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid #6D6E6E;
     overflow: hidden;
-    background-color: #D9D8D8;
+    background-color: #F5F5F5;
     color: #6D6E6E;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
     width: 1000px;
     height: 400px;
 }
