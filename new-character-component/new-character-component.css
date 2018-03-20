@@ -66,6 +66,10 @@ new-character-component .start-button {
   padding: 20px 0px;
 }
 
+new-character-component .start-button:hover {
+  background-color: #c9191e;
+}
+
 @media (max-width: 768px) {
   new-character-component .quote-container {
     width: 70%;

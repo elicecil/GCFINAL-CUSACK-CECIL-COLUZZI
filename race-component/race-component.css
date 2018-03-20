@@ -40,6 +40,7 @@ body {
 	margin: 20px;
 	box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
     transition: box-shadow 150ms;
+		transition: transform 150ms;
 	border-radius: 3px;
 	overflow: hidden;
 	cursor: pointer;
@@ -53,6 +54,7 @@ body {
 
 .race-component-button-box:hover {
 	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+	transform: scale(1.008);
 }
 
 .race-component-button-box:hover .race-component-name-box  {
@@ -94,4 +96,3 @@ body {
 	margin-top: 20px;
 
 }
-
