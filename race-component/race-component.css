@@ -12,10 +12,16 @@ body {
 	margin: 0 auto;
 }
 
+@media (max-width: 850px) {
+  .race-component {
+	flex-direction: column;
+	}
+}
+
 .race-component-header {
 	text-align: center;
-	height: 35px;
-	padding: 10px;
+	height: 70px;
+	padding: 15px;
 	background-color: #a91e22;
 	color: #fff;
 	font-size: 31px;
@@ -33,10 +39,16 @@ body {
 	flex-direction: column;
 	margin: 20px;
 	box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
-  transition: box-shadow 150ms;
+    transition: box-shadow 150ms;
 	border-radius: 3px;
 	overflow: hidden;
 	cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .race-component-button-box {
+	min-width: 200px ;
+	}
 }
 
 .race-component-button-box:hover {
@@ -67,12 +79,15 @@ body {
 	margin-right: 60px;
 }
 
+@media (max-width: 425px) {
+  .race-component-description {
+	min-width: 200px ;
+	}
+}
+
 .race-component-bonus-list {
 
 	margin-right: 60px;
-}
-
-.race-component-speed-age {
 }
 
 .race-component-speed {
@@ -80,6 +95,3 @@ body {
 
 }
 
-.speed-size-container {
-
-}

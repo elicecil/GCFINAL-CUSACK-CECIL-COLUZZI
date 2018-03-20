@@ -1,3 +1,4 @@
+
 body {
 	background-color: #fff;
 }
@@ -5,15 +6,17 @@ body {
 .class-component {
 	background-color: #fff;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: stretch;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .class-component-header {
 	text-align: center;
-	height: 35px;
-	padding: 10px;
+	height: 70px;
+	padding: 15px;
 	background-color: #a91e22;
 	color: #fff;
 	font-size: 31px;
@@ -23,34 +26,51 @@ body {
 }
 
 .class-component-button-box {
-	width: 75%;
+	min-width: 350px;
+	flex: 1;
 	display: flex;
-	background-color: #d9d8d8;
+	background-color: #F5F5F5;
 	color: #383838;
 	flex-direction: column;
-	margin-bottom: 25px;
-	box-shadow: 3px 3px 3px;
+	margin: 20px;
+	box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
+    transition: box-shadow 150ms;
+	border-radius: 3px;
+	overflow: hidden;
+	cursor: pointer;
+}
 
+@media (max-width: 425px) {
+  .class-component-button-box {
+	min-width: 200px ;
+	}
+
+  .class-component-info-box {
+	justify-content: flex-start;
+  }
 }
 
 .class-component-button-box:hover {
-	cursor: pointer;
-	box-shadow: 7px 7px 7px;
+	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+}
+
+.class-component-button-box:hover .class-component-name-box  {
+	background-color: #c9191e;
 }
 
 .class-component-name-box {
 	width: auto;
-	height: 30px;
 	background-color: #a91e22;
 	color: #fff;
 	font-size: 20px;
-	padding-left: 25px;
-	padding-top: 5px;  
+	padding: 20px 40px;
 }
 
 .class-component-info-box {
-	margin: 15px;
+	margin: 30px 40px;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .class-component-hit-die {
@@ -65,10 +85,5 @@ body {
 .class-component-proficiency {
 	padding: 5px;
 }
-
-
-
-
-
 
 
