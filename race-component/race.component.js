@@ -11,6 +11,8 @@ angular.module("dndToolKit").component("raceComponent", {
     this.allRaces = {};
     this.bonuses = [];
     this.addedStats = [];
+    this.stats = {};
+    this.statNames = ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"];
 
     this.rollStats = function() {
       DiceService.addStats();
@@ -19,12 +21,11 @@ angular.module("dndToolKit").component("raceComponent", {
     this.addBonuses = function() {
       this.bonuses = CharacterService.character.race.ability_bonuses;
       var dice = DiceService.addStats();
-      console.log("Dice", dice)
-      console.log("Bonus", this.bonuses);
-      for(var i = 0; i < 6; i++) {
-          this.addedStats.push(this.bonuses[i] + dice[i]);
-          console.log("Final", this.addedStats);
-      }
+      this.statNames.forEach((statName, i) => {
+          this.stats[statName] = (this.bonuses[i] + dice[i]);          
+          console.log("Final", this.stats);
+      });
+      CharacterService.character.stats = this.stats;
     }
 
     this.$onInit = function() {
@@ -34,7 +35,6 @@ angular.module("dndToolKit").component("raceComponent", {
 
 
     this.setCharacterRace = function(race) {
-      console.log(race);
       CharacterService.setRace(race);
       this.addBonuses();
       $location.url("/class")
