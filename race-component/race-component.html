@@ -2,24 +2,42 @@
 <div class="race-component-header">Choose Your Race</div>
 <div class="race-component">
 	
-	<div class="race-component-button-box" ng-click="$ctrl.setCharacterRace(race)" ng-repeat="race in $ctrl.raceList">
-		<div class="race-component-name-box">{{race.name}}</div>
+	<div class="race-component-main-box" ng-repeat="race in $ctrl.raceList">
+		<div class="race-component-name-box">
+			<div>{{race.name}}</div>
+			<button ng-click="$ctrl.setCharacterRace(race)">SELECT</button>
+		</div>
 		<div class="race-component-info-box">
 			<div class="race-component-description"><b>Description:</b><p>{{race.alignment}}</p></div>
-			<div class="race-component-bonus-list">
-				<b>Bonuses:</b>
-				<p>
-					<div>Strength: +{{race.ability_bonuses[0]}}, </div>
-					<div>Dexterity: +{{race.ability_bonuses[1]}}, </div>
-					<div>Constitution: +{{race.ability_bonuses[2]}}, </div>
-					<div>Intelligence: +{{race.ability_bonuses[3]}}, </div>
-					<div>Wisdom: +{{race.ability_bonuses[4]}}, </div>
-					<div>Charisma +{{race.ability_bonuses[5]}}</div>
-				</p>
-			</div>
-			<div class="speed-size-container">
-				<div class="race-component-speed-age"><b>Speed:</b> {{race.speed}} </div>
-				<div class="race-component-speed"> <b>Size:</b> {{race.size}} </div>
+			<button class="race-component-more-button" ng-click="open=!open">MORE
+			</button>
+			<div class="race-component-show-box" ng-if="open">
+				<div class="race-component-first-collum">
+					<div class="race-component-bonus-list">
+						<b>Bonuses:</b>
+						<div>Strength: +{{race.ability_bonuses[0]}}, </div>
+						<div>Dexterity: +{{race.ability_bonuses[1]}}, </div>
+						<div>Constitution: +{{race.ability_bonuses[2]}}, </div>
+						<div>Intelligence: +{{race.ability_bonuses[3]}}, </div>
+						<div>Wisdom: +{{race.ability_bonuses[4]}}, </div>
+						<div>Charisma +{{race.ability_bonuses[5]}}</div>
+					</div>
+					<b>Starting Proficiencies:</b>
+					<div class="race-component-starting-proficiencies" ng-repeat="proficiencie in race.starting_proficiencies">{{proficiencie.name}}</div>
+					<b>Sub-Races:</b>
+					<div class="race-component-sub-races" ng-repeat="subrace in race.subraces">{{subrace.name}}</div>
+				</div>
+				<div class="race-component-second-collum">
+					<b>Speed:</b>
+					<div class="race-component-speed">{{race.speed}}</div>
+					<b>Size:</b>
+					<div class="race-component-speed">{{race.size}} </div>
+					<b>Languages:</b> 
+					<div class="race-component-languages" ng-repeat="name in race.languages">{{name.name}},</div>
+					<b>Traits:</b>
+					<div class="race-component-traits" ng-repeat="trait in race.traits">
+					{{trait.name}},</div>
+				</div>
 			</div>
 		</div>
 	</div>

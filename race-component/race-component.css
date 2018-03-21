@@ -30,7 +30,8 @@ body {
 	width: 100%;
 }
 
-.race-component-button-box {
+
+.race-component-main-box {
 	min-width: 350px;
 	flex: 1;
 	display: flex;
@@ -40,34 +41,53 @@ body {
 	margin: 20px;
 	box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
     transition: box-shadow 150ms;
-		transition: transform 150ms;
+	transition: transform 150ms;
 	border-radius: 3px;
 	overflow: hidden;
-	cursor: pointer;
 }
 
 @media (max-width: 450px) {
-  .race-component-button-box {
+  .race-component-main-box {
 	min-width: 200px ;
+	}
+	.race-component-info-box {
+		margin: 20px;
 	}
 }
 
-.race-component-button-box:hover {
-	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
-	transform: scale(1.008);
-}
-
-.race-component-button-box:hover .race-component-name-box  {
+.race-component-main-box:hover .race-component-name-box  {
 	background-color: #c9191e;
 }
 
 .race-component-name-box {
+	display: flex;
 	width: auto;
 	background-color: #a91e22;
 	color: #fff;
-	font-size: 20px;
+	font-size: 30px;
 	padding: 20px 40px;
+	justify-content: space-between;
 }
+
+.race-component-name-box > div {
+	margin: none;
+}
+
+.race-component-name-box > button {
+	width: 100px;
+	height: 35px;
+	border-radius: .5em;
+	border: none;
+	font-size: 16px;
+	background-color: ;
+}
+
+.race-component-name-box > button:hover {
+	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+	transform: scale(1.008);
+	cursor: pointer;
+	background-color: ;
+	}
 
 .race-component-info-box {
 	margin: 30px 40px;
@@ -81,18 +101,105 @@ body {
 	margin-right: 60px;
 }
 
+.race-component-description > p {
+	padding-left: 5px;
+}
+
 @media (max-width: 425px) {
   .race-component-description {
 	min-width: 200px ;
 	}
 }
 
-.race-component-bonus-list {
+.race-component-more-button {
+	width: 100px;
+	height: 35px;
+	border-radius: .5em;
+	border: none;
+	margin-bottom: 15px;
+	font-size: 20px;
+	background-color: #F5F5F5;
+	color: #1071B2;
+	align-self: flex-end;
+}
 
+.race-component-more-button:hover {
+	transform: scale(1.008);
+	cursor: pointer;
+	text-decoration: underline;
+	color: #69ACD1
+}
+
+.race-component-show-box {
+	width: auto;
+	display: flex;
+	height: 100%;
+}
+
+.race-component-first-collum {
+	display: flex;
+	flex-direction: column;
 	margin-right: 60px;
+	width: auto;
+}
+
+.race-component-first-collum > b {
+	padding-bottom: 5px; 
+	margin-top: 20px;
+	}
+
+.race-component-bonus-list {
+	
+}
+
+.race-component-bonus-list > b {
+	padding-bottom: 5px;
+}
+
+.race-component-bonus-list > div {
+	padding: 5px;
+}
+
+.race-component-starting-proficiencies {
+	padding: 5px;
+}
+
+.race-component-sub-races {
+	padding: 5px;
+}
+
+.race-component-second-collum {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: auto;
+}
+
+.race-component-second-collum > b {
+	margin-top: 15px;
+	padding-right: 10px;
+}
+
+.race-component-speed > b {
+	padding-right: 10px;
 }
 
 .race-component-speed {
-	margin-top: 20px;
-
+	padding: 5px;
 }
+
+.race-component-languages {
+	padding: 5px;
+}
+
+.race-component-traits {
+	padding: 5px;
+}
+
+
+
+
+
+
+
