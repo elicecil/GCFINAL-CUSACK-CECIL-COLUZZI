@@ -12,11 +12,16 @@
       <p class="summary-class">{{$ctrl.character.class.name}}</p>
     </div>
     <div class="stat-list">
-      <div class="stats" ng-repeat="(name, stat) in $ctrl.character.stats">{{name}}: {{stat}}</div>
+      <div class="stats" ng-repeat="(name, stat) in $ctrl.character.stats">
+        <div class="stat-stat">{{stat}}</div>
+        <hr>
+        <div class="stat-name">{{name}}</div> 
     </div>
-    <p>{{$ctrl.character.race.age}}</p>
-    <p>{{$ctrl.character.race.alignment}}</p>
-    <p>{{$ctrl.character.race.language_desc}}</p>
+    </div>
+    <p class="age">{{$ctrl.character.race.age}}</p>
+    <p class="race-align">{{$ctrl.character.race.alignment}}</p>
+    <p class="race-language">{{$ctrl.character.race.language_desc}}</p>
+    <p class="sheet">Now that you've made your character, download a <a href="http://dnd.wizards.com/articles/features/character_sheets">character sheet</a> and fill it out!</p>
   </div>
   <progress-steps step="3" steps="3"></progress-steps>
 </div>

@@ -36,18 +36,14 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     width: 75%;
-    height: 400px;
+    height: 100%;
     box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
 }
 
-.summary-info:hover {
-    box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
-    transform: scale(1.008);
-}
-
-@media (max-width: 425px;) {
+@media (max-width: 425px) {
   .summary-info {
     width: auto;
+    height: 100%;
   }
 }
 
@@ -62,12 +58,15 @@ body {
 .character-header p {
     position: absolute;
     font-size: 20px;
+    padding: 0 40px;
 
 }
 
 .race-class {
     display: flex;
     font-weight: bold;
+    font-size: 22px;
+    padding: 10px 40px;
 }
 
 .summary-race {
@@ -81,9 +80,53 @@ body {
 .stat-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .stats {
-    font-weight: 800;
-    padding: 5px;
+    padding: 7px;
+    margin: 5px;
+    border: 2px solid #6D6E6E;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+}
+
+.stat-stat {
+    font-weight: 300;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.stat-name {
+    font-weight: 600;
+}
+
+.age {
+    padding: 2px 40px;
+}
+
+.race-align {
+    padding: 2px 40px;
+}
+
+.race-language {
+    padding: 2px 40px;
+}
+
+.sheet {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 2px;
+    padding-bottom: 40px;
+}
+
+.sheet a {
+    text-decoration: none;
+    color: #1071B2;
+}
+
+.sheet a:hover {
+    color: #69ACD1;
+    text-decoration: underline;
 }
