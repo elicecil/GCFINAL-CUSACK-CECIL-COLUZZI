@@ -11,6 +11,9 @@
       <p class="summary-race">{{$ctrl.character.race.name}}</p>
       <p class="summary-class">{{$ctrl.character.class.name}}</p>
     </div>
+    <div class="stat-list">
+      <div class="stats" ng-repeat="(name, stat) in $ctrl.character.stats">{{name}}: {{stat}}</div>
+    </div>
     <p>{{$ctrl.character.race.age}}</p>
     <p>{{$ctrl.character.race.alignment}}</p>
     <p>{{$ctrl.character.race.language_desc}}</p>
