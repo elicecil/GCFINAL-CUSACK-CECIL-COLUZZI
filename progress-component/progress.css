@@ -1,11 +1,11 @@
-.progress-footer {
+progress-steps .progress-footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 20px;
 }
 
-.steps {
+progress-steps .steps {
 	width: 30px;
 	height: 30px;
 	background-color: #a91e22;
@@ -14,10 +14,27 @@
 }
 
 
-
-.selected {
+progress-steps .selected {
 	width: 35px;
 	height: 35px;
 	box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
 	background-color: #c9191e;
+}
+
+progress-steps .contact-footer {
+	width: 100%;
+	height: 50px;
+}
+
+progress-steps .link-container {
+	width: 100%;
+	height: 50px;
+	background-color:  #a91e22;
+	display: flex;
+	justify-content: center;
+}
+
+progress-steps .link-container a {
+	margin: 20px 100px;
+	color: #FFF;
 }
