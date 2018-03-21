@@ -6,7 +6,7 @@ angular.module("dndToolKit").component("classComponent", {
   },
 
   controller: ["CharacterService", "$location", function(CharacterService, $location) {
-    this.classList = {};
+    this.classList = null;
     this.class = {}
 
     this.$onInit = function() {
