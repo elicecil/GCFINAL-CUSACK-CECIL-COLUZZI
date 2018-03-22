@@ -1,11 +1,21 @@
 <div class="class-component-header">Choose Your Class</div>
 <div class="class-component" ng-if="$ctrl.classList">
 	<div class="class-component-button-box" ng-click="$ctrl.setCharacterClass(class)" ng-repeat="class in $ctrl.classList">
-		<div class="class-component-name-box">{{class.name}}</div>
+		<div class="class-component-name-box">
+			<div>{{class.name}}</div>
+			<button ng-click="$ctrl.setCharacterRace(race)">SELECT</button>
+		</div>
 		<div class="class-component-info-box">
-			<div class="class-component-hit-die"><b>Hit Die: </b><br>{{class.hit_die}}</div>
-			<div class="class-component-proficiencies"><b>Proficenties:</b>
-				<span class="class-component-proficiency" ng-repeat="proficiency in class.proficiencies">{{proficiency.name}},</span>
+			<div class="class-component-hit-die"><b>Hit Die: </b><br>
+				<div>{{class.hit_die}}</div>
+		</div>
+			<span class="class-component-proficiencies">
+				<b>Proficenties:</b><br>
+				<div class="class-component-proficiency" ng-repeat="proficiency in class.proficiencies">{{proficiency.name}},</div>
+			</span>
+			<div class="class-component-sub-classes">
+				<b>Sub Classes:</b>
+				<div class="class-component-sub-classes" ng-repeat="subclass in class.subclasses">{{subclass.name}}</div>
 			</div>
 		</div>
 	</div>
