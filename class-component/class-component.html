@@ -1,4 +1,7 @@
-<div class="class-component-header">Choose Your Class</div>
+<div class="class-component-header">
+	<button class="class-component-back-button" ng-click="$ctrl.backButton()">BACK</button>
+	<div>Choose Your Class</div>
+</div>
 <div class="class-component" ng-if="$ctrl.classList">
 	<div class="class-component-button-box" ng-click="$ctrl.setCharacterClass(class)" ng-repeat="class in $ctrl.classList">
 		<div class="class-component-name-box">

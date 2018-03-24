@@ -26,5 +26,10 @@ angular.module("dndToolKit").component("classComponent", {
     this.getCharacterInfo = function() {
       console.log(CharacterService.character);
     }
+
+    this.backButton = function() {
+      $location.url("/race")
+    }
+
     }]
 });

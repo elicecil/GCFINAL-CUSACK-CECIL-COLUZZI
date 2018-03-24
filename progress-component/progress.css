@@ -36,24 +36,24 @@ progress-steps .link-container {
 
 progress-steps .link-container a {
 	margin: 15px 40px;
-	color: #FFF;
+	color: #ffbbbb;
 }
 
 progress-steps .footer-text {
 	margin: 15px 40px;
-	color: #FFF;
+	color: #ffbbbb;
 	font-weight: bold;
 }
 
 @media (max-width: 485px) {
 	progress-steps .link-container a {
 		margin: 15px 15px;
-		color: #FFF;
+		color: #ffbbbb;
 	}
 
 	progress-steps .footer-text {
 		margin: 15px 15px;
-		color: #FFF;
+		color: #ffbbbb;
 		font-weight: bold;
 	}
 }

@@ -14,15 +14,35 @@ body {
 }
 
 .class-component-header {
-	text-align: center;
+	display: flex;
+	align-items: center;
 	height: 70px;
-	padding: 15px;
+	padding: 40px;
 	background-color: #a91e22;
 	color: #fff;
 	font-size: 31px;
 	font-weight: 600;
 	margin-bottom: 60px;
 	width: 100%;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+.class-component-back-button {
+	width: 100px;
+	height: 35px;
+	border-radius: .5em;
+	border: none;
+	font-size: 16px;
+	background-color: ;
+	
+}
+
+.class-component-back-button:hover {
+	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+	transform: scale(1.008);
+	cursor: pointer;
+	background-color: ;
 }
 
 @media (max-width: 750px) {
@@ -109,7 +129,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 15px;
-	
+
 }
 
 .class-component-proficiencies b {
@@ -129,14 +149,14 @@ body {
 	padding: 5px;
 }
 
-.loader-container {
+class-component.loader-container {
 	width: 100%;
 	height: auto;
 	display: flex;
 	justify-content: center;
 }
 
-.loader {
+class-component.loader {
     border: 10px solid #f3f3f3; /* Light grey */
     border-top: 10px solid #a91e22; /* Blue */
     border-radius: 50%;

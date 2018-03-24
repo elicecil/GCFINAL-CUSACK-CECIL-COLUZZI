@@ -19,15 +19,36 @@ body {
 }
 
 .race-component-header {
-	text-align: center;
+	display: flex;
+	align-items: center;
 	height: 70px;
-	padding: 15px;
+	padding: 40px;
 	background-color: #a91e22;
 	color: #fff;
 	font-size: 31px;
 	font-weight: 600;
 	margin-bottom: 60px;
 	width: 100%;
+	box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+.race-component-back-button {
+	width: 100px;
+	height: 35px;
+	border-radius: .5em;
+	border: none;
+	font-size: 16px;
+	background-color: ;
+	
+}
+
+.race-component-back-button:hover {
+	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+	transform: scale(1.008);
+	cursor: pointer;
+	background-color: ;
 }
 
 @media (max-width: 750px) {
@@ -37,6 +58,7 @@ body {
 }
 
 .race-component-main-box {
+	display: flex;
 	min-width: 350px;
 	flex: 1;
 	display: flex;
@@ -99,12 +121,13 @@ body {
 	margin: 30px 40px;
 	display: flex;
 	flex-wrap: wrap;
+
 }
 
 .race-component-description {
 	flex: 2;
 	min-width: 350px;
-	
+
 }
 
 .race-component-description > p {
@@ -115,6 +138,13 @@ body {
   .race-component-description {
 	min-width: 200px ;
 	}
+}
+
+.race-component-button-box {
+	display: flex;
+	flex: 3;
+	align-items: flex-end;
+
 }
 
 .race-component-more-button {
@@ -128,6 +158,8 @@ body {
 	color: #1071B2;
 	margin: 0 auto;
 	margin-top: 15px;
+	margin-bottom: 15px;
+
 }
 
 .race-component-more-button:hover {
@@ -140,7 +172,13 @@ body {
 .race-component-show-box {
 	width: auto;
 	display: flex;
-	height: 100%;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+
+.race-component-show-box.open {
+	max-height: 1000px;
 }
 
 @media (max-width: 425px) {
@@ -158,12 +196,12 @@ body {
 }
 
 .race-component-first-collum > b {
-	padding-bottom: 5px; 
+	padding-bottom: 5px;
 	margin-top: 20px;
 	}
 
 .race-component-bonus-list {
-	
+
 }
 
 .race-component-bonus-list > b {
@@ -231,7 +269,29 @@ body {
     animation: spin 2s linear infinite;
 }
 
+.loader.ng-leave-active {
+    display: none;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+.card {
+	transition-property: all;
+	transition-timing-function: ease-out;
+	transition-duration: 400ms;
+}
+
+.card.ng-enter {
+	opacity: 0;
+}
+
+.card.ng-enter-active {
+	opacity: 1;
+}
+
+.card.ng-enter-stagger {
+	transition-delay: 125ms;
+	transition-duration: 0s;
 }
