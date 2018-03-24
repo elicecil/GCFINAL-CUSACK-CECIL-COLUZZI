@@ -9,8 +9,6 @@
 		</div>
 		<div class="race-component-info-box">
 			<div class="race-component-description"><b>Description:</b><p>{{race.alignment}}</p></div>
-			<button class="race-component-more-button" ng-click="open=!open">MORE
-			</button>
 			<div class="race-component-show-box" ng-if="open">
 				<div class="race-component-first-collum">
 					<div class="race-component-bonus-list">
@@ -28,8 +26,10 @@
 					<div class="race-component-sub-races" ng-repeat="subrace in race.subraces">{{subrace.name}}</div>
 				</div>
 				<div class="race-component-second-collum">
-					<b>Speed:</b>
-					<div class="race-component-speed">{{race.speed}}</div>
+					<div class="race-component-speed-box">
+						<b>Speed:</b>
+						<div class="race-component-speed">{{race.speed}}</div>
+					</div>
 					<b>Size:</b>
 					<div class="race-component-speed">{{race.size}} </div>
 					<b>Languages:</b>
@@ -39,10 +39,19 @@
 					{{trait.name}},</div>
 				</div>
 			</div>
+			<button class="race-component-more-button" ng-click="open=!open">MORE
+			</button>
 		</div>
 	</div>
 </div>
 <div class="loader-container">
+<<<<<<< HEAD
 	<div class="loader" ng-if="!$ctrl.raceList"></div>
 </div>
 <progress-steps step="1" steps="3" ng-if="$ctrl.raceList"></progress-steps>
+=======
+	<div class="loader" ng-if="!$ctrl.classList"></div>
+</div>
+<progress-steps step="1" steps="3"></progress-steps>
+
+>>>>>>> ebbb212dbc3e9ce100fad5d7c3153e0e74e49a11
