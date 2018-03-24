@@ -1,0 +1,126 @@
+dice-roller .dice-header {
+    background-color: #A91E22;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 31px;
+    margin-bottom: 60px;
+    box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
+}
+
+dice-roller .main {
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #F5F5F5;
+    color: #6D6E6E;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    width: 75%;
+    height: 100%;
+    box-shadow: 3px 3px 3px rgba(0, 0 ,0 ,.2);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+dice-roller .box-header {
+    text-align: center;
+    height: 70px;
+    width: 100%;
+    padding: 15px;
+    background-color: #a91e22;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+
+dice-roller .dice-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+dice-roller .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 30px;
+    padding: 7px;
+    border: 2px solid #6D6E6E;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    width: 185px;
+    font-size: 25px;
+}
+
+dice-roller .container button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+dice-roller .container hr {
+    width: 150px;
+}
+
+dice-roller .roll-result {
+    display: flex;
+    justify-content: center;
+}
+
+dice-roller .number {
+    color: #A91E22;
+    font-weight: 800;
+}
+
+dice-roller .d20 {
+    width: 125px;
+    height: 125px;
+    background-image: url("/images/d20-gray.svg");
+    margin-left: 15px;
+    transition: background-image .2s ease-in
+}
+
+dice-roller .d20:hover {
+    background-image: url("/images/d20-red.svg");
+}
+
+dice-roller .d8 {
+    width: 125px;
+    height: 125px;
+    background-image: url("/images/d8-gray.svg");
+    margin-left: 15px;
+    transition: background-image .2s ease-in
+}
+
+dice-roller .d8:hover {
+    background-image: url("/images/d8-red.svg");
+}
+
+dice-roller .d6 {
+    width: 125px;
+    height: 125px;
+    margin-left: 15px;
+    background-image: url("/images/d6-gray.svg");    
+    transition: background-image .2s ease-in
+}
+
+dice-roller .d6:hover {
+    background-image: url("/images/d6-red.svg");
+}
+
+dice-roller .d4 {
+    width: 125px;
+    height: 125px;
+    background-image: url("/images/d4-gray.svg");
+    margin-left: 15px;
+    transition: background-image .2s ease-in
+}
+
+dice-roller .d4:hover {
+    background-image: url("/images/d4-red.svg");
+}
