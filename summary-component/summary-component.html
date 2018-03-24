@@ -16,7 +16,7 @@
       <div class="stats" ng-repeat="(name, stat) in $ctrl.character.stats">
         <div class="stat-stat">{{stat}}</div>
         <hr>
-        <div class="stat-name">{{name}}</div> 
+        <div class="stat-name">{{name}}</div>
     </div>
     </div>
     <p class="age">{{$ctrl.character.race.age}}</p>
@@ -24,5 +24,5 @@
     <p class="race-language">{{$ctrl.character.race.language_desc}}</p>
     <p class="sheet">Now that you've made your character, download a <a href="http://dnd.wizards.com/articles/features/character_sheets">character sheet</a> and fill it out!</p>
   </div>
-  <progress-steps step="3" steps="3"></progress-steps>
 </div>
+<progress-steps step="3" steps="3" class="summary-progress"></progress-steps>

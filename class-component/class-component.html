@@ -3,10 +3,10 @@
 	<div>Choose Your Class</div>
 </div>
 <div class="class-component" ng-if="$ctrl.classList">
-	<div class="class-component-button-box" ng-click="$ctrl.setCharacterClass(class)" ng-repeat="class in $ctrl.classList">
+	<div class="class-component-button-box card" ng-repeat="class in $ctrl.classList" ng-if="$ctrl.classList">
 		<div class="class-component-name-box">
 			<div>{{class.name}}</div>
-			<button ng-click="$ctrl.setCharacterRace(race)">SELECT</button>
+			<button ng-click="$ctrl.setCharacterClass(class)">SELECT</button>
 		</div>
 		<div class="class-component-info-box">
 			<div class="class-component-hit-die"><b>Hit Die: </b><br>

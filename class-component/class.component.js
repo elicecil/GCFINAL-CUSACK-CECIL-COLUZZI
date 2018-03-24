@@ -13,7 +13,6 @@ angular.module("dndToolKit").component("classComponent", {
       CharacterService.getClassList().then(
         classList => {
           this.classList = classList
-          console.log(classList)
         });
       }
 

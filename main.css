@@ -7,6 +7,7 @@ body, html {
   font-size: 18px;
   padding: 0;
   margin: 0;
+
 }
 
 button {
@@ -15,4 +16,23 @@ button {
 
 input {
   font-family: inherit;
+}
+
+.card {
+	transition-property: all;
+	transition-timing-function: ease-out;
+	transition-duration: 400ms;
+}
+
+.card.ng-enter {
+	opacity: 0;
+}
+
+.card.ng-enter-active {
+	opacity: 1;
+}
+
+.card.ng-enter-stagger {
+	transition-delay: 125ms;
+	transition-duration: 0s;
 }

@@ -31,7 +31,7 @@ body {
 	width: 100%;
 	box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
 	justify-content: space-between;
-	flex-direction: row-reverse;
+	flex-direction: row;
 }
 
 .race-component-back-button {
@@ -41,7 +41,7 @@ body {
 	border: none;
 	font-size: 16px;
 	background-color: ;
-	
+
 }
 
 .race-component-back-button:hover {
@@ -277,21 +277,21 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-.card {
+race-component .card {
 	transition-property: all;
 	transition-timing-function: ease-out;
 	transition-duration: 400ms;
 }
 
-.card.ng-enter {
+race-component .card.ng-enter {
 	opacity: 0;
 }
 
-.card.ng-enter-active {
+race-component .card.ng-enter-active {
 	opacity: 1;
 }
 
-.card.ng-enter-stagger {
+race-component .card.ng-enter-stagger {
 	transition-delay: 125ms;
 	transition-duration: 0s;
 }
