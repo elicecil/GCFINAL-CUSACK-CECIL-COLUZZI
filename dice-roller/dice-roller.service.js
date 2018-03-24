@@ -2,7 +2,7 @@ angular.module("dndToolKit").service("DiceService", function() {
     this.rolls = [];
 
     this.rollDie = function() {
-        return Math.ceil(Math.random() * 6);
+       return Math.ceil(Math.random() * 6);
     } 
 
     this.rollDice = () => {
@@ -30,4 +30,8 @@ angular.module("dndToolKit").service("DiceService", function() {
             } 
         } return this.rolls;
     }
+
+    this.manualRoll = function(diceX) {
+        return Math.ceil(Math.random() * diceX);
+    } 
 });

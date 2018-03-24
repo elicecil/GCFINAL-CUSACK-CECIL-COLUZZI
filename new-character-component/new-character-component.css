@@ -19,6 +19,21 @@ new-character-component .new-character-container {
   }
 }
 
+new-character-component .dice-icon {
+  margin-bottom: -100px;
+  margin-left: -100px;
+}
+
+new-character-component .dice-link {
+  background-color: transparent;
+  border: none;
+}
+
+new-character-component .icon {
+  width: 65px;
+}
+
+
 new-character-component .character-input-container {
   display: flex;
   flex-direction: column;
@@ -79,7 +94,7 @@ new-character-component .start-button:hover {
 
 new-character-component .start-button:hover {
   background-color: #d0373b;
-  box-shadow:
+  box-shadow: none;
 }
 
 new-character-component .quote {

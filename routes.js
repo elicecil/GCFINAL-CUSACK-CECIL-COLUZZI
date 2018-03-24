@@ -13,4 +13,8 @@ angular.module("dndToolKit").config(["$routeProvider", function($routeProvider) 
   $routeProvider.when('/summary', {
     template: '<summary-component />',
   });
+
+  $routeProvider.when('/roll', {
+    template: '<dice-roller />',
+  });
 }]);
