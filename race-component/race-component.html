@@ -1,8 +1,8 @@
 
 <div class="race-component-header">Choose Your Race</div>
 <div class="race-component">
-	
-	<div class="race-component-main-box" ng-repeat="race in $ctrl.raceList">
+
+	<div class="race-component-main-box" ng-repeat="race in $ctrl.raceList" ng-if="$ctrl.raceList">
 		<div class="race-component-name-box">
 			<div>{{race.name}}</div>
 			<button ng-click="$ctrl.setCharacterRace(race)">SELECT</button>
@@ -32,7 +32,7 @@
 					<div class="race-component-speed">{{race.speed}}</div>
 					<b>Size:</b>
 					<div class="race-component-speed">{{race.size}} </div>
-					<b>Languages:</b> 
+					<b>Languages:</b>
 					<div class="race-component-languages" ng-repeat="name in race.languages">{{name.name}},</div>
 					<b>Traits:</b>
 					<div class="race-component-traits" ng-repeat="trait in race.traits">
@@ -42,5 +42,7 @@
 		</div>
 	</div>
 </div>
-<progress-steps step="1" steps="3"></progress-steps>
-
+<div class="loader-container">
+	<div class="loader" ng-if="!$ctrl.raceList"></div>
+</div>
+<progress-steps step="1" steps="3" ng-if="$ctrl.raceList"></progress-steps>

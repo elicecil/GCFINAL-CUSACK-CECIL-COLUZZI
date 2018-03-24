@@ -6,7 +6,7 @@ angular.module("dndToolKit").component("raceComponent", {
   },
 
   controller: ["CharacterService", "$location", "DiceService", function(CharacterService, $location, DiceService) {
-    this.raceList = {};
+    this.raceList = null;
     this.race = {};
     this.allRaces = {};
     this.bonuses = [];
@@ -22,7 +22,7 @@ angular.module("dndToolKit").component("raceComponent", {
       this.bonuses = CharacterService.character.race.ability_bonuses;
       var dice = DiceService.addStats();
       this.statNames.forEach((statName, i) => {
-          this.stats[statName] = (this.bonuses[i] + dice[i]);          
+          this.stats[statName] = (this.bonuses[i] + dice[i]);
           console.log("Final", this.stats);
       });
       CharacterService.character.stats = this.stats;
