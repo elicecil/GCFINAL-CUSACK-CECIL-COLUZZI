@@ -109,7 +109,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 15px;
-	
+
 }
 
 .class-component-proficiencies b {
@@ -129,14 +129,14 @@ body {
 	padding: 5px;
 }
 
-.loader-container {
+class-component.loader-container {
 	width: 100%;
 	height: auto;
 	display: flex;
 	justify-content: center;
 }
 
-.loader {
+class-component.loader {
     border: 10px solid #f3f3f3; /* Light grey */
     border-top: 10px solid #a91e22; /* Blue */
     border-radius: 50%;
