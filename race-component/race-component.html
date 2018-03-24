@@ -9,7 +9,7 @@
 		</div>
 		<div class="race-component-info-box">
 			<div class="race-component-description"><b>Description:</b><p>{{race.alignment}}</p></div>
-			<div class="race-component-show-box" ng-if="open">
+			<div class="race-component-show-box" ng-class="{open: open}">
 				<div class="race-component-first-collum">
 					<div class="race-component-bonus-list">
 						<b>Bonuses:</b>
@@ -39,7 +39,12 @@
 					{{trait.name}},</div>
 				</div>
 			</div>
-			<button class="race-component-more-button" ng-click="open=!open">MORE
+		</div>
+		<div class="race-component-button-box">
+			<button class="race-component-more-button" ng-show="!open" ng-click="open=true">MORE
+			</button>
+			<button class="race-component-more-button" ng-show="open" ng-click="open=false">
+				LESS
 			</button>
 		</div>
 	</div>
