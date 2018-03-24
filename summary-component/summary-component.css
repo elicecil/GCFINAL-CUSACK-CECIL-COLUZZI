@@ -2,17 +2,39 @@ body {
     background-color: #FFFFFF;
 
 }
-.header {
-    background-color: #A91E22;
-    color: white;
+.summary-component-header {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 40px;
+    background-color: #a91e22;
+    color: #fff;
     font-size: 31px;
+    font-weight: 600;
     margin-bottom: 60px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.summary-component-back-button {
+    width: 100px;
+    height: 35px;
+    border-radius: .5em;
+    border: none;
+    font-size: 16px;
+    background-color: ;
+}
+
+.summary-component-back-button:hover {
+    box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+    transform: scale(1.008);
+    cursor: pointer;
+    background-color: ;
 }
 
 @media (max-width: 750px) {
-  .header {
+  .summary-component-header {
     margin-bottom: 30px;
   }
 }

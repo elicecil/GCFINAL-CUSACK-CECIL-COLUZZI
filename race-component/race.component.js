@@ -40,5 +40,9 @@ angular.module("dndToolKit").component("raceComponent", {
       $location.url("/class")
     }
 
+    this.backButton = function() {
+      $location.url("/")
+    }
+
     }]
 });

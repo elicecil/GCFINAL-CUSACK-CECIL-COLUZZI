@@ -1,5 +1,8 @@
 
-<div class="race-component-header">Choose Your Race</div>
+<div class="race-component-header">
+	<button class="race-component-back-button" ng-click="$ctrl.backButton()">BACK</button>
+	<div>Choose Your Race</div>
+</div>
 <div class="race-component">
 
 	<div class="race-component-main-box card" ng-repeat="race in $ctrl.raceList" ng-if="$ctrl.raceList">

@@ -19,9 +19,10 @@ body {
 }
 
 .race-component-header {
-	text-align: center;
+	display: flex;
+	align-items: center;
 	height: 70px;
-	padding: 15px;
+	padding: 40px;
 	background-color: #a91e22;
 	color: #fff;
 	font-size: 31px;
@@ -29,6 +30,25 @@ body {
 	margin-bottom: 60px;
 	width: 100%;
 	box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+.race-component-back-button {
+	width: 100px;
+	height: 35px;
+	border-radius: .5em;
+	border: none;
+	font-size: 16px;
+	background-color: ;
+	
+}
+
+.race-component-back-button:hover {
+	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+	transform: scale(1.008);
+	cursor: pointer;
+	background-color: ;
 }
 
 @media (max-width: 750px) {

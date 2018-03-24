@@ -5,5 +5,9 @@ angular.module("dndToolKit").component("summaryComponent", {
 
     this.character = CharacterService.fetchCharacter();
 
+    this.backButton = function() {
+      $location.url("/class")
+    }
+
   }]
 });
