@@ -1,1 +1,1 @@
-angular.module("dndToolKit", ["ngRoute"]);
+angular.module("dndToolKit", ["ngRoute","ngAnimate"]);

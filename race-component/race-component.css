@@ -28,6 +28,7 @@ body {
 	font-weight: 600;
 	margin-bottom: 60px;
 	width: 100%;
+	box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
 }
 
 @media (max-width: 750px) {
@@ -106,7 +107,7 @@ body {
 .race-component-description {
 	flex: 2;
 	min-width: 350px;
-	
+
 }
 
 .race-component-description > p {
@@ -175,12 +176,12 @@ body {
 }
 
 .race-component-first-collum > b {
-	padding-bottom: 5px; 
+	padding-bottom: 5px;
 	margin-top: 20px;
 	}
 
 .race-component-bonus-list {
-	
+
 }
 
 .race-component-bonus-list > b {
@@ -248,7 +249,29 @@ body {
     animation: spin 2s linear infinite;
 }
 
+.loader.ng-leave-active {
+    display: none;
+}
+
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+.card {
+	transition-property: all;
+	transition-timing-function: ease-out;
+	transition-duration: 400ms;
+}
+
+.card.ng-enter {
+	opacity: 0;
+}
+
+.card.ng-enter-active {
+	opacity: 1;
+}
+
+.card.ng-enter-stagger {
+	transition-delay: 125ms;
+	transition-duration: 0s;
 }

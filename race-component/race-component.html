@@ -2,7 +2,7 @@
 <div class="race-component-header">Choose Your Race</div>
 <div class="race-component">
 
-	<div class="race-component-main-box" ng-repeat="race in $ctrl.raceList" ng-if="$ctrl.raceList">
+	<div class="race-component-main-box card" ng-repeat="race in $ctrl.raceList" ng-if="$ctrl.raceList">
 		<div class="race-component-name-box">
 			<div>{{race.name}}</div>
 			<button ng-click="$ctrl.setCharacterRace(race)">SELECT</button>
