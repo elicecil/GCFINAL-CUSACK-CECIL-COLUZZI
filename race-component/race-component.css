@@ -56,7 +56,8 @@ body {
 	min-width: 200px ;
 	}
 	.race-component-info-box {
-		margin: 20px;
+		margin: 20px 0px 20px 0px;
+
 	}
 }
 
@@ -103,7 +104,7 @@ body {
 .race-component-description {
 	flex: 2;
 	min-width: 350px;
-	margin-right: 60px;
+	
 }
 
 .race-component-description > p {
@@ -126,6 +127,7 @@ body {
 	background-color: #F5F5F5;
 	color: #1071B2;
 	margin: 0 auto;
+	margin-top: 15px;
 }
 
 .race-component-more-button:hover {
