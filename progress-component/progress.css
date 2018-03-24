@@ -28,13 +28,32 @@ progress-steps .contact-footer {
 
 progress-steps .link-container {
 	width: 100%;
-	height: 50px;
+	height: auto;
 	background-color:  #a91e22;
 	display: flex;
 	justify-content: center;
 }
 
 progress-steps .link-container a {
-	margin: 20px 100px;
+	margin: 15px 40px;
 	color: #FFF;
+}
+
+progress-steps .footer-text {
+	margin: 15px 40px;
+	color: #FFF;
+	font-weight: bold;
+}
+
+@media (max-width: 485px) {
+	progress-steps .link-container a {
+		margin: 15px 15px;
+		color: #FFF;
+	}
+
+	progress-steps .footer-text {
+		margin: 15px 15px;
+		color: #FFF;
+		font-weight: bold;
+	}
 }
