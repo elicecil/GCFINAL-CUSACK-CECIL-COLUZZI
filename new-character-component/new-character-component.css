@@ -12,25 +12,45 @@ new-character-component .new-character-container {
   background-size: cover;
   width: 100%;
 }
+new-character-component .dice-icon {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
 
 @media (max-width: 768px) {
   new-character-component .new-character-container {
     flex-direction: column;
   }
+  new-character-component .name-input::placeholder {
+    font-size: 18px;
+  }
+  new-character-component .dice-icon {
+    position: relative;
+    top: -45%;
+    left: 0px;
+  }
 }
 
-new-character-component .dice-icon {
-  margin-bottom: -100px;
-  margin-left: -100px;
-}
+
 
 new-character-component .dice-link {
   background-color: transparent;
   border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+new-character-component .dice-link span {
+  color: #fff;
 }
 
 new-character-component .icon {
   width: 65px;
+  margin: 20px;
 }
 
 
@@ -79,6 +99,7 @@ new-character-component .start-button {
   font-weight: bold;
   border: none;
   padding: 20px 0px;
+  transition: background-color 150ms;
 }
 
 new-character-component .start-button:hover {
