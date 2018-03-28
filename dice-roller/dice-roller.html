@@ -1,30 +1,35 @@
 <div class="dice-header">
-    <p>Roll Some Dice</p>
+    <button class="dice-back-button" ng-click="$ctrl.backButton()">BACK</button>
+    <div>Roll Some Dice</div>
 </div>
 <div class="main">
     <div class="box-header">
-        <p>Click your chosen dice below to roll.</p>
+        <div>Click Your Chosen Dice Below To Roll</div>
     </div>
     <div class="dice-container">
-        <div class="container">
-            <button ng-click="$ctrl.rollDie(20)"><div class="d20"></div></button>
-            <hr>
-            <p class="roll-result">You rolled:<span class="number">{{$ctrl.d20}}</span></p>
+        <div>
+            <div class="container">
+                <button ng-click="$ctrl.rollDie(20)"><div class="d20"></div></button>
+                <hr>
+                <p class="roll-result">You rolled: <span class="number"> {{$ctrl.d20}}</span></p>
+            </div>
+            <div class="container">
+                <button ng-click="$ctrl.rollDie(8)"><div class="d8"></div></button>
+                <hr>
+                <p class="roll-result">You rolled: <span class="number">{{$ctrl.d8}}</span> </p>
+            </div>
         </div>
-        <div class="container">
-            <button ng-click="$ctrl.rollDie(8)"><div class="d8"></div></button>
-            <hr>
-            <p class="roll-result">You rolled:<span class="number">{{$ctrl.d8}}</span> </p>
-        </div>
-        <div class="container">
-            <button ng-click="$ctrl.rollDie(6)"><div class="d6"></div></button>
-            <hr>
-            <p class="roll-result">You rolled:<span class="number">{{$ctrl.d6}}</span> </p>
-        </div>
-        <div class="container">
-            <button ng-click="$ctrl.rollDie(4)"><div class="d4" src=""></div></button>
-            <hr>
-            <p class="roll-result">You rolled:<span class="number">{{$ctrl.d4}}</span> </p>
+        <div>
+            <div class="container">
+                <button ng-click="$ctrl.rollDie(6)"><div class="d6"></div></button>
+                <hr>
+                <p class="roll-result">You rolled: <span class="number">{{$ctrl.d6}}</span> </p>
+            </div>
+            <div class="container">
+                <button ng-click="$ctrl.rollDie(4)"><div class="d4" src=""></div></button>
+                <hr>
+                <p class="roll-result">You rolled: <span class="number">{{$ctrl.d4}}</span> </p>
+            </div>
         </div>
     </div>
 </div>

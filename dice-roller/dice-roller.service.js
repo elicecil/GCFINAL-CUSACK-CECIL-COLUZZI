@@ -34,4 +34,6 @@ angular.module("dndToolKit").service("DiceService", function() {
     this.manualRoll = function(diceX) {
         return Math.ceil(Math.random() * diceX);
     } 
+
+    
 });

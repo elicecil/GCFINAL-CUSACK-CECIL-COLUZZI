@@ -1,11 +1,41 @@
-dice-roller .dice-header {
-    background-color: #A91E22;
-    color: white;
+.dice-header {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 40px;
+    background-color: #a91e22;
+    color: #fff;
     font-size: 31px;
+    font-weight: 600;
     margin-bottom: 60px;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
     box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
+    text-align: right;
+}
+
+.dice-back-button {
+    width: 100px;
+    height: 35px;
+    border-radius: .5em;
+    border: none;
+    font-size: 16px;
+    background-color: ;
+
+}
+
+.dice-back-button:hover {
+    box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
+    transform: scale(1.008);
+    cursor: pointer;
+    background-color: ;
+}
+
+@media (max-width: 750px) {
+    .dice-header {
+        margin-bottom: 30px ;
+    }
 }
 
 dice-roller .main {
@@ -23,23 +53,27 @@ dice-roller .main {
     margin-top: 20px;
 }
 
+@media (max-width: 990px) {
+    dice-roller .main {
+        width: 75% ;
+    }
+}
+
 dice-roller .box-header {
-    text-align: center;
-    height: 70px;
-    width: 100%;
-    padding: 15px;
+    display: flex;
+    width: auto;
     background-color: #a91e22;
     color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    width: 100%;
+    font-size: 30px;
+    padding: 20px 40px;
+    justify-content: space-between;
 }
 
 dice-roller .dice-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    margin: 40px;
 }
 
 dice-roller .container {
@@ -75,6 +109,7 @@ dice-roller .roll-result {
 dice-roller .number {
     color: #A91E22;
     font-weight: 800;
+    padding-left: 10px;
 }
 
 dice-roller .d20 {

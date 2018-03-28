@@ -27,6 +27,7 @@ body {
 	justify-content: space-between;
 	flex-direction: row;
 	box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
+	text-align: right;
 }
 
 .class-component-back-button {
@@ -125,7 +126,7 @@ body {
 }
 
 .class-component-hit-die > div {
-	padding: 5px;
+	padding-top: 7px;
 	font-size: 20px;
 }
 
@@ -137,12 +138,14 @@ body {
 }
 
 .class-component-proficiencies b {
-	padding: 5px ;
+	padding-top: 7px ;
 	padding-left: 0;
+	padding-right: 7px;
 }
 
 .class-component-proficiency {
-	padding: 5px;
+	padding-top: 7px;
+	padding-right: 7px;
 }
 
 .class-component-sub-classes {
@@ -150,7 +153,7 @@ body {
 }
 
 .class-component-sub-classes > div {
-	padding: 5px;
+	padding-top: 7px;
 }
 
 class-component.loader-container {

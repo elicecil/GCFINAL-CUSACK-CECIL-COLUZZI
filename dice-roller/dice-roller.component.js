@@ -1,7 +1,7 @@
 angular.module("dndToolKit").component("diceRoller", {
     templateUrl: "dice-roller/dice-roller.html",
   
-    controller: ["DiceService", "CharacterService", function(DiceService, CharacterService) {
+    controller: ["DiceService", "CharacterService", "$location", function(DiceService, CharacterService, $location) {
         this.d20 = "";
         this.d8 = "";
         this.d6 = "";
@@ -22,5 +22,10 @@ angular.module("dndToolKit").component("diceRoller", {
                 return this.d4;
             }
         }
+
+        this.backButton = function() {
+      $location.url("/")
+    }
+
     }]
 });

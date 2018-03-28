@@ -32,6 +32,7 @@ body {
 	box-shadow: 0px 1px 1px rgba(0, 0 ,0 ,.4);
 	justify-content: space-between;
 	flex-direction: row;
+	text-align: right;
 }
 
 .race-component-back-button {
@@ -134,7 +135,6 @@ body {
 }
 
 .race-component-description > p {
-	padding-left: 5px;
 }
 
 @media (max-width: 425px) {
@@ -212,15 +212,16 @@ body {
 }
 
 .race-component-bonus-list > div {
-	padding: 5px;
+	padding-top: 7px;
 }
 
 .race-component-starting-proficiencies {
-	padding: 5px;
+	padding-top: 7px;
 }
 
 .race-component-sub-races {
-	padding: 5px;
+	padding-top: 7px;
+	padding-bottom: 7px;
 }
 
 .race-component-second-collum {
@@ -245,15 +246,15 @@ body {
 }
 
 .race-component-speed {
-	padding: 5px;
+	padding-top: 7px;
 }
 
 .race-component-languages {
-	padding: 5px;
+	padding-top: 7px;
 }
 
 .race-component-traits {
-	padding: 5px;
+	padding-top: 7px;
 }
 
 .loader-container {
