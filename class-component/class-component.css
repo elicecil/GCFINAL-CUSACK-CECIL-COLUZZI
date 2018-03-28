@@ -36,7 +36,7 @@ body {
 	border-radius: .5em;
 	border: none;
 	font-size: 16px;
-	background-color: ;
+	background-color: #fff;
 	transition: box-shadow 150ms;
 }
 
@@ -44,7 +44,7 @@ body {
 	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
 	transform: scale(1.008);
 	cursor: pointer;
-	background-color: ;
+	background-color: #fff;
 }
 
 @media (max-width: 750px) {
@@ -106,7 +106,7 @@ body {
 	border-radius: .5em;
 	border: none;
 	font-size: 16px;
-	background-color: ;
+	background-color: #fff;
 	transition: box-shadow 150ms;
 	transition: transform 150ms;
 }
@@ -115,7 +115,7 @@ body {
 	box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
 	transform: scale(1.008);
 	cursor: pointer;
-	background-color: ;
+	background-color: #fff;
 }
 
 .class-component-info-box {

@@ -25,14 +25,14 @@ body {
     border-radius: .5em;
     border: none;
     font-size: 16px;
-    background-color: ;
+    background-color: #fff;
 }
 
 .summary-component-back-button:hover {
     box-shadow: 7px 7px 7px rgba(0, 0 ,0 ,.2);
     transform: scale(1.008);
     cursor: pointer;
-    background-color: ;
+    background-color: #fff;
 }
 
 .summary-main {
