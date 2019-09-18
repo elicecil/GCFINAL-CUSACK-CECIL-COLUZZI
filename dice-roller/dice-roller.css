@@ -115,37 +115,37 @@ dice-roller .number {
 dice-roller .d20 {
     width: 125px;
     height: 125px;
-    background-image: url("dice-roller/images/d20-gray.svg");
+    background-image: url("images/d20-gray.svg");
     margin-left: 15px;
     transition: background-image .2s ease-in
 }
 
 dice-roller .d20:hover {
-    background-image: url("dice-roller/images/d20-red.svg");
+    background-image: url("images/d20-red.svg");
 }
 
 dice-roller .d8 {
     width: 125px;
     height: 125px;
-    background-image: url("dice-roller/images/d8-gray.svg");
+    background-image: url("images/d8-gray.svg");
     margin-left: 15px;
     transition: background-image .2s ease-in
 }
 
 dice-roller .d8:hover {
-    background-image: url("dice-roller/images/d8-red.svg");
+    background-image: url("images/d8-red.svg");
 }
 
 dice-roller .d6 {
     width: 125px;
     height: 125px;
     margin-left: 15px;
-    background-image: url("dice-roller/images/d6-gray.svg");    
+    background-image: url("images/d6-gray.svg");    
     transition: background-image .2s ease-in
 }
 
 dice-roller .d6:hover {
-    background-image: url("dice-roller/images/d6-red.svg");
+    background-image: url("images/d6-red.svg");
 }
 
 dice-roller .d4 {
@@ -157,5 +157,5 @@ dice-roller .d4 {
 }
 
 dice-roller .d4:hover {
-    background-image: url("dice-roller/images/d4-red.svg");
+    background-image: url("images/d4-red.svg");
 }
