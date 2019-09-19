@@ -151,7 +151,7 @@ dice-roller .d6:hover {
 dice-roller .d4 {
     width: 125px;
     height: 125px;
-    background-image: url("/images/d4-gray.svg");
+    background-image: url("images/d4-gray.svg");
     margin-left: 15px;
     transition: background-image .2s ease-in
 }
